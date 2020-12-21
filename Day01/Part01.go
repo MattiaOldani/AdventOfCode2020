@@ -9,7 +9,7 @@ func main () {
 
 	var number []int
 	var results int
-  number=ReadText()
+  	number=ReadText()
 	for i:=range number {
 		for j:=i+1; j<len(number); j++ {
 			if number[i]+number[j]==2020 {
@@ -17,7 +17,7 @@ func main () {
 				break
 			}
 		if results>0 {
-		  break
+			break
 		}
 	}
 	fmt.Println(results)
@@ -26,7 +26,7 @@ func main () {
 
 func ReadText () (number []int) {
   
-  scanner:=bufio.NewScanner(os.Stdin)
+  	scanner:=bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
 		N,_:=strconv.Atoi(scanner.Text())
 		number=append(number, N)
