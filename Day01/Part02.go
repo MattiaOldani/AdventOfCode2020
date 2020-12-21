@@ -18,11 +18,11 @@ func main () {
 					break
 				}
 			}
-			if results > 0 {
+			if results>0 {
 				break
 			}
 		}
-		if results > 0 {
+		if results>0 {
 			break
 		}
 	}
@@ -34,7 +34,7 @@ func ReadText () (number []int) {
 
   	scanner := bufio.NewScanner(os.Stdin)
 	for scanner.Scan() {
-		N,_ := strconv.Atoi(scanner.Text())
+		N,_:=strconv.Atoi(scanner.Text())
 		number=append(number, N)
 	}
   	return
